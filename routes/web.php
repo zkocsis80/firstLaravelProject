@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FirstController;
+use App\Http\Controllers\KonyvController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +79,5 @@ Route::get('/todo-lista', function () {
 
 Route::get('/first', [FirstController::class, 'kiir']);
 Route::get('/first/{number}', [FirstController::class, 'show']);
+
+Route::get('/konyvek', [KonyvController::class, 'index']);
