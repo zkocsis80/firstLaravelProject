@@ -1,0 +1,1 @@
+<p>A kérés kiszolgálása a kontrolleren keresztül érkezik a nézet felé.</p>

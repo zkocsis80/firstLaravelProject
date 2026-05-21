@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FirstController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,18 +43,38 @@ Route::get('/szam', function () {
     ]);
 });
 
-Route::get('/nemletezik', function(){
+Route::get('/nemletezik', function () {
     return view('nemletezik');
 });
 
-Route::get('/rolam', function(){
+Route::get('/rolam', function () {
     return view('rolam');
 });
 
-Route::get('/kedvenc-jatek', function(){
+Route::get('/kedvenc-jatek', function () {
     return view('kedvenc-jatek');
 });
 
-Route::get('/kapcsolat', function(){
-    return view('kapcsolat');
+// Route::get('/kapcsolat', function(){
+//     return view('kapcsolat');
+// });
+
+Route::view('/kapcsolat', 'kapcsolat');
+
+Route::get('/todo-lista', function () {
+    $taskok = [
+        'Bevásárlás',
+        'Mosás',
+        'Takarítás',
+        'Főzés'
+    ];
+    $fontosak = [];
+    return view('todo-lista', [
+        'taskok' => $taskok,
+        'fontosak' => $fontosak
+
+    ]);
 });
+
+Route::get('/first', [FirstController::class, 'kiir']);
+Route::get('/first/{number}', [FirstController::class, 'show']);
