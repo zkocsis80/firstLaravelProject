@@ -6,9 +6,9 @@
 
 <body>
     <h1>Kedvenc játék oldal</h1>
-    <a href="\rolam">Rólam</a><br>
-    <a href="\kedvenc-jatek">Kedvenc játék</a><br>
-    <a href="\kapcsolat">Kapcsolat</a>
+    <a href="/rolam">Rólam</a><br>
+    <a href="/kedvenc-jatek">Kedvenc játék</a><br>
+    <a href="/kapcsolat">Kapcsolat</a>
 </body>
 
 </html>
