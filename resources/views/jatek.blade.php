@@ -1,0 +1,1 @@
+<p>A kiválasztott játék: <span style="color: blue;">{{ Str::upper($nev) }}</span></p>

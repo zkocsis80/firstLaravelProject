@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FirstController;
 use App\Http\Controllers\KonyvController;
+use App\Http\Controllers\JatekController;
 
 /*
 |--------------------------------------------------------------------------
@@ -81,3 +82,5 @@ Route::get('/first', [FirstController::class, 'kiir']);
 Route::get('/first/{number}', [FirstController::class, 'show']);
 
 Route::get('/konyvek', [KonyvController::class, 'index']);
+
+Route::get('/jatek/{nev}', [JatekController::class, 'show']);
