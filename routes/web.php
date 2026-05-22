@@ -5,7 +5,7 @@ use App\Http\Controllers\FirstController;
 use App\Http\Controllers\KonyvController;
 use App\Http\Controllers\JatekController;
 use App\Http\Controllers\FilmController;
-
+use App\Http\Controllers\CarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -87,3 +87,5 @@ Route::get('/konyvek', [KonyvController::class, 'index']);
 Route::get('/jatek/{nev}', [JatekController::class, 'show']);
 
 Route::get('/filmek', [FilmController::class, 'index']);
+
+Route::get('/autok', [CarController::class, 'index']);
