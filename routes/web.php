@@ -89,3 +89,7 @@ Route::get('/jatek/{nev}', [JatekController::class, 'show']);
 Route::get('/filmek', [FilmController::class, 'index']);
 
 Route::get('/autok', [CarController::class, 'index']);
+
+Route::view('/fooldal', 'fooldal');
+
+Route::view('/jatekok', 'jatekok');
