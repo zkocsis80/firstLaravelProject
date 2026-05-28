@@ -1,9 +1,8 @@
-    <a href="{{ url('/fooldal') }}">Főoldal</a>
-    <a href="{{ url('/autok') }}">Autók</a>
-    <a href="{{ url('/konyvek') }}">Könyvek</a>
-    <a href="{{ url('/jatekok') }}">Játékok</a>
-    <a href="{{ url('/filmek') }}">Filmek</a>
+@extends('layout')
 
-<p>
-    Üdvözöllek a főoldalon!
-</p>
+@section('title', 'Főoldal')
+@section('content')
+    <p>
+        Üdvözöllek a főoldalon!
+    </p>
+@endsection

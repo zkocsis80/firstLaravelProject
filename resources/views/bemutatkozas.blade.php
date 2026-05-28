@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-</head>
-
-<body>
+@extends('layout')
+@section('title', 'Bemutatkozás')
+@section('content')
     <h1>Rólam</h1>
     <h2>Kocsis Zsolt</h2>
     <p>Alapadatok</p>
@@ -28,6 +24,5 @@
         <li>Klinikai vizsgálati információs honlap létrehozása</li>
         <li>Munkám során felmerült IT igények támogatása</li>
     </ul>
-</body>
 
-</html>
+@endsection

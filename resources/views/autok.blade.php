@@ -1,14 +1,13 @@
-    <a href="{{ url('/fooldal') }}">Főoldal</a>
-    <a href="{{ url('/autok') }}">Autók</a>
-    <a href="{{ url('/konyvek') }}">Könyvek</a>
-    <a href="{{ url('/jatekok') }}">Játékok</a>
-    <a href="{{ url('/filmek') }}">Filmek</a>
-    
-<p>Autók:</p>
-<ol>
-    @forelse($cars as $car)
-    <li>{{ $car }}</li>
-    @empty
-        <li>Nincs elérhető autó.</li>
-    @endforelse
-</ol>
+@extends('layout')
+@section('title', 'Autók')
+@section('content')
+
+    <p>Autók:</p>
+    <ol>
+        @forelse($cars as $car)
+            <li>{{ $car }}</li>
+        @empty
+            <li>Nincs elérhető autó.</li>
+        @endforelse
+    </ol>
+@endsection

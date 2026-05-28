@@ -17,7 +17,8 @@
             <label for="show-menu" class="close"><span class="fa fa-times"></label>
             <ul id="menu">
 
-                <li><a class="{{ Request::path() === '/' ? 'active' : '' }}" href="{{ url('/fooldal') }}">Főoldal</a></li>
+                <li><a class="{{ Request::path() === 'fooldal' ? 'active' : '' }}" href="{{ url('/fooldal') }}">Főoldal</a></li>
+                <li><a class="{{ Request::path() === 'bemutatkozas' ? 'active' : '' }}" href="{{ url('/bemutatkozas') }}">Bemutatkozás</a></li>
                 <li><a class="{{ Request::path() === 'autok' ? 'active' : '' }}" href="{{ url('/autok') }}">Autók</a></li>
                 <li><a class="{{ Request::path() === 'konyvek' ? 'active' : '' }}" href="{{ url('/konyvek') }}">Könyvek</a></li>
                 <li><a class="{{ Request::path() === 'jatekok' ? 'active' : '' }}" href="{{ url('/jatekok') }}">Játékok</a></li>
