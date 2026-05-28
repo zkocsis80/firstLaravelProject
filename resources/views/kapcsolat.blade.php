@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
+@extends('layout')
 
-<head>
+@section('title', 'Kapcsolat')
 
-</head>
+{{-- @section('title')
+Kapcsolat
+@endsection --}}
 
-<body>
+@section('content')
     <h1>Kapcsolat oldal</h1>
-    <a href="/rolam">Rólam</a><br>
-    <a href="/kedvenc-jatek">Kedvenc játék</a><br>
-    <a href="/kapcsolat">Kapcsolat</a>
-</body>
-
-</html>
+    <p>Itt lehet kapcsolatba lépni velem.</p>
+@endsection

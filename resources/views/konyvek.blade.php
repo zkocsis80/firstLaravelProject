@@ -1,11 +1,13 @@
-    <a href="{{ url('/fooldal') }}">Főoldal</a>
-    <a href="{{ url('/autok') }}">Autók</a>
-    <a href="{{ url('/konyvek') }}">Könyvek</a>
-    <a href="{{ url('/jatekok') }}">Játékok</a>
-    <a href="{{ url('/filmek') }}">Filmek</a>
-    
+@extends('layout')
+
+@section('title', 'Könyvek')
+
+@section('content')
+    <h1>Könyvek oldal</h1>
+    <p>Itt találhatók a kedvenc könyveim.</p>
 <ul>
     @foreach($konyvek as $konyv)
         <li>{{ $konyv['cim'] }} - {{ $konyv['szerzo'] }}</li>
     @endforeach
 </ul>
+@endsection
